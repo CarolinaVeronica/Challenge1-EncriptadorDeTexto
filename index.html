@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="style.css">    
+    <link rel="icon" type="image/x-icon" href="imagenes/Favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javaScript" src="script.js"></script>
+    <title>Challenge1-EncriptadorDeTexto-2023</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/frame6.png" alt="Logo de Alura">
+            
+    </header>
+    <main>
+        <section class="sectionIzquierdo">
+            <textarea class="area" id="inputTexto" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="informacion"> (!)Solo letras minúsculas y sin acentos</h6>   
+            </div>    
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar" value="Encriptar" id="btn-encriptar" onclick= "encriptar()">
+                <input type="button" class="btn-desencriptar" value="Desencriptar" id="btn-desencriptar" onclick="desencriptar()">
+            </div>         
+        </section>
+        <section class="sectionDerecho">
+            
+            <div class="contenedor-munieco">
+                <img src="imagenes/munieco.png" id="imgDer" alt="Imagen de Muñeco">
+            </div>
+            <div class="contenedor-resultado">
+                <p class="mensaje" id="msj">Mensaje Encriptado:</p></div>
+                <textarea name="resultado" id="textoDesencriptado" cols="50" rows="10"></textarea> 
+            </div>
+            <div class="contenedor-h3">
+                <h3 id="texto">Ningún mensaje fue encontrado</h3>
+            </div>
+        
+            <div class="contenedor-parrafo">
+                <p id="texto2" class="tx_Encriptado">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            
+            <div class="contenedor-copiar">
+                <button type="button" id="botonCopiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p class="designed">Designed by Garay Carolina Verónica</p>
+        </div>
+        <div><p>&copy 2023-Curso-G4- Oracle + AluraLatam </p>
+        </div> 
+
+    </footer>
+
+<script src="script.js">
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+    
+        
+ </script>   
+    
+</body>
+
+
+</html>
